@@ -71,6 +71,7 @@
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#references">References</a></li>
   </ol>
 </details>
 
@@ -83,13 +84,6 @@
 
 ## History:
 #### Fisher's Iris Data Set, also known as the Irish Flower Data Set is a data set which consists of 3 classes of 50 instances from three species of Iris. In this data, the length and width of the sepals and petals were measured in ceteminters and a linear discriminant model was used to distinguis the species from each other. 
-
-## References:
- #### 1. https://en.wikipedia.org/wiki/Iris_flower_data_set
- #### 2. https://archive.ics.uci.edu/ml/datasets/iris
- #### 3. https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
-
-
 
 
 
@@ -171,7 +165,11 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 * []()
 * []()
 
-
+<!-- REFERENCES -->
+## References:
+ #### 1. https://en.wikipedia.org/wiki/Iris_flower_data_set
+ #### 2. https://archive.ics.uci.edu/ml/datasets/iris
+ #### 3. https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
 
 
 
