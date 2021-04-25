@@ -172,6 +172,8 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
  #### 3. https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
  #### 4. https://www.shanelynn.ie/python-pandas-read-csv-load-data-from-csv-files/
  #### 5. https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77
+ #### 6. https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python
+ #### 7. https://stackoverflow.com/questions/9622163/save-plot-to-image-file-instead-of-displaying-it-using-matplotlib
 
 
 
