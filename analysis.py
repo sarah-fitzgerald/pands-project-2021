@@ -1,7 +1,7 @@
 #This program outpus a summary of each variable of the Iris Dataset into a single text file, then saves a histogram of each variable, and outputs a scatter plot of each pair of variables
 #Author: Sarah Fitzgerald
 
-import numpy as numpy #Needed to 
+import numpy as np #Needed to 
 import matplotlib.pyplot as plt
 import pandas as pd #Used to read the .csv file for the data set
 import seaborn as sns 

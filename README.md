@@ -23,28 +23,13 @@
 
 
 
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">project_title</h3>
+
+  <h3 align="center">pands-project2021</h3>
 
   <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
-  </p>
-</p>
+    Sarah Fitzgerald
+    
 
 
 
@@ -59,7 +44,13 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#libraries-and-dataset-import">Libraries and Dataset Import</a>
+      <ul>
+        <li><a href="#libraries">Libraries</a></li>
+      </ul>
+      <ul>
+        <li><a href="#dataset">Dataset</a></li>
+      </ul>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -78,7 +69,7 @@
 
 
 <!-- Fisher's Iris Data Set -->
-## Fisher's Iris Data Set
+# Fisher's Iris Data Set
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
@@ -87,10 +78,22 @@
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
+<!-- Libraries and Dataset Import-->
+# Libraries and Dataset Import
+Needed to import libraries and the dataset to analyse Fisher's Iris Data Set 
 
-To get a local copy up and running follow these simple steps.
+## Libraries
+  	
+    import numpy as np
+    import matplotlib.pyplot as plt
+    import pandas as pd 
+    import seaborn as sns 
+
+NumPy
+
+   
+
+## Dataset
 
 ### Prerequisites
 
@@ -172,8 +175,10 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
  #### 3. https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
  #### 4. https://www.shanelynn.ie/python-pandas-read-csv-load-data-from-csv-files/
  #### 5. https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77
- #### 6. https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python
- #### 7. https://stackoverflow.com/questions/9622163/save-plot-to-image-file-instead-of-displaying-it-using-matplotlib
+ #### 6. https://cmdlinetips.com/2019/02/how-to-make-histogram-in-python-with-pandas-and-seaborn/
+ #### 7. https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python
+ #### 8. https://stackoverflow.com/questions/22408237/named-colors-in-matplotlib
+ #### 9. https://stackoverflow.com/questions/9622163/save-plot-to-image-file-instead-of-displaying-it-using-matplotlib
 
 
 
