@@ -87,7 +87,7 @@
 # Fisher's Iris Data Set
 
 
-## History:
+## History
 Fisher's Iris Data Set, also known as the Irish Flower Data Set is a data set which consists of 3 classes of 50 instances from three species of Iris. In this data, the length and width of the sepals and petals were measured in ceteminters and a linear discriminant model was used to distinguis the species from each other. 
 
 

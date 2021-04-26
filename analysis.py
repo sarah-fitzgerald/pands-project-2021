@@ -132,5 +132,6 @@ plt.show()
 #Pairplot for Sepal and Petal Comparasion
 #Used pairplot to represent multidenminsional relationship between Sepal Lenght, Sepal Width, Petal Length, Petal Width, and their respective speies: https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
 sns.pairplot(data, hue = 'Species', palette = ['purple', 'deeppink', 'blueviolet'])
+plt.title ('Iris Pairplot') 
 plt.savefig('Iris Pairplot') 
 plt.show()
