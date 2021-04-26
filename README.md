@@ -52,12 +52,27 @@
         <li><a href="#dataset">Dataset</a></li>
       </ul>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <ul>
+          <li><a href="#dataset-import">Dataset Import</a></li>
+          <li><a href="#analysis-summary-of-the-data">Analysis Summary of the Data</a></li>
+        </ul>
+    </li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#histograms">Histograms</a></li>
+    <ul>
+        <li><a href="#histogram-code">Histogram Code</a></li>
+      </ul>
+      <ul>
+        <li><a href="#histograms">Histograms</a></li>
+      </ul>
+    <li><a href="#scatter-plots">Scatter Plots</a></li>
+    <ul>
+        <li><a href="#scatter-plot-code">Scatter Plot Code</a></li>
+      </ul>
+      <ul>
+        <li><a href="#scatter-plots">Scatter Plots</a></li>
+      </ul>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -73,7 +88,7 @@
 
 
 ## History:
-#### Fisher's Iris Data Set, also known as the Irish Flower Data Set is a data set which consists of 3 classes of 50 instances from three species of Iris. In this data, the length and width of the sepals and petals were measured in ceteminters and a linear discriminant model was used to distinguis the species from each other. 
+Fisher's Iris Data Set, also known as the Irish Flower Data Set is a data set which consists of 3 classes of 50 instances from three species of Iris. In this data, the length and width of the sepals and petals were measured in ceteminters and a linear discriminant model was used to distinguis the species from each other. 
 
 
 
@@ -82,58 +97,114 @@
 Needed to import libraries and the dataset to analyse Fisher's Iris Data Set 
 
 ## Libraries
-
+```sh
     import matplotlib.pyplot as plt
     import pandas as pd 
     import seaborn as sns 
+```
+
+  * _Matplotlib_ is used to create visualisations in Python. _Pyplot_ is a collection of functions that make matplotlib work like MATLAB. These was used extensivly in this project to add labels, titles, and legends to plots. It was also used to save and show plots.
   
-  *_Matplotlib_ is used to create visualisations in Python. _Pyplot_ is a collection of functions that make matplotlib work like MATLAB. These was used extensivly in this project to add labels, titles, and legends to plots. It was also used to save and show plots.
-  
-  *_pandas_ is used for data manipulation and analysis in Python. It offers data structures and operations to manipulate numerical tables and time series.
+  * _pandas_ is used for data manipulation and analysis in Python. It offers data structures and operations to manipulate numerical tables and time series.
 
-  *_Seaborn_ is a data visualisation library based on matplotlib and it provides an interface for statistical graphics. In this project it was used to plot histograms, scatter plots, and pairplots in this project
+  * _Seaborn_ is a data visualisation library based on matplotlib and it provides an interface for statistical graphics. In this project it was used to plot histograms, scatter plots, and pairplots in this project.
 
-
+#
 
 ## Dataset
+The data was downloaded from the UCI Machine Learning Repository and can be found on this repository as [irisDataset.csv](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/irisDataset.csv) 
+
+### Dataset Import
+```sh
+    data = pd.read_csv("irisDataset.csv")
+```
+This line of code is used to read the data from the .csv file using _pandas_. It was stored as the variable _data_.
+
+### Analysis Summary of the Data
+After the data has been loaded from the .csv file we needed to analyse the data and write information from it to a .txt file. The first and last 5 rows from the .csv were added to the .txt file using data.head().
+```sh
+    text = open ("analysisSummary.txt", "w")
+    data.head()
+```
+
+This next section add text to title and subtitle the information in the .txt file
+
+```sh
+    print ("Analysis Summary", file = text)
+    print (" ", file = text)
+    print ("Overview of the whole dataset", file = text) 
+    print ("    -Showing the first 5 and last 5 entries:", file = text) 
+    print (data, file = text) 
+```
 
 
-### Prerequisites
+data.describe() prints out a summary of the Dataframe.
+```sh
+    print (" ", file = text)
+    print ("Summary of numerical values:", file = text)
+    print (data.describe(), file = text) 
+    print (" ", file = text)
+```
+data["Species"].value_counts() prints out the occurance of each species of iris from the "Species" column in the dataset.
+```sh
+    print ("Types of iris species:", file = text)
+    print (data["Species"].value_counts(), file = text) 
+    print (" ", file = text)
+```
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+<!-- Histograms -->
+# Histograms
+## Histogram Code
+Defined the species using the data variable and selecting the column "Species" from the .csv file
+```sh
+    irisSetosa = data[data.Species == "Iris-setosa"]
+    irisVersicolor = data[data.Species == "Iris-versicolor"]
+    irisVirginica = data[data.Species == "Iris-virginica"]
+```
+Used the built in function Seaborn to make the histograms using the inforamtion from the dataset.
 
-### Installation
+The displot function pulls the information from various named columns in the dataset. The histograms are layered on top of each other. This is done by making a histogram of one variable then adding hte next historgram to an existing plot.  
+```sh
+    sns.distplot(irisSetosa['sepalLenghtCm'], kde = False, label = 'Iris Setosa', color = 'purple')
+    sns.distplot(irisVersicolor['sepalLenghtCm'], kde = False, label = 'Iris Versicolor', color = 'deeppink')
+    sns.distplot(irisVirginica['sepalLenghtCm'], kde = False, label = 'Iris Virginica', color = 'blueviolet')
+```
+Labled the X-Axis and Y-Axis respectively and added a title to the histogram.
+```sh
+    plt.xlabel ('Centimeters')
+    plt.ylabel ('Frequency') 
+    plt.title ('Sepal Length')
+```
+Lastly, for this histogram, added a legend, then code to automatically save the histogram as a .png, and show the histogram.
+```sh
+    plt.legend() 
+    plt.savefig('Sepal Length in CM') 
+    plt.show()
+```
+This process is repeated for each histogram with the variables changed.
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
+## Histograms
+
+![Sepal Length in CM](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Sepal%20Length%20in%20CM.png)
+
+![Sepal Width in CM](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Sepal%20Width%20in%20CM.png)
+
+![Petal Length in CM](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Petal%20Length%20in%20CM.png)
+
+![Petal Width in CM](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Petal%20Width%20in%20CM.png)
+
+<!-- Scatter Plots -->
+# Scatter Plots
+## Scatter Plot Code
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+## Scatter Plots
+![Sepal Scatter Plot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Sepal%20Scatter%20Plot.png)
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+![Petal Scatter Plot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Petal%20Scatter%20Plot.png)
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
-
-
+![Iris Pairplot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Petal%20Paitplot.png)
 
 <!-- CONTRIBUTING -->
 ## Contributing

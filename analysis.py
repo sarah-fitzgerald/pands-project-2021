@@ -11,10 +11,10 @@ text = open ("analysisSummary.txt", "w") #Writes the information from the .csv f
 
 data.head() #This previews the first 5 lines of the data from the .csv file: https://www.shanelynn.ie/python-pandas-read-csv-load-data-from-csv-files/
 
-#file = text writes the data from the .csv file to the .txt file
+#file = text writes each line to the .txt file
 
 print ("Analysis Summary", file = text)
-print (" ", file = text)
+print (" ", file = text) #Used to create a space between paragraphs
 print ("Overview of the whole dataset", file = text) #Adds title to this section
 print ("    -Showing the first 5 and last 5 entries:", file = text) #Adds subtitle to this section
 print (data, file = text) #Writes the actual data to the .txt file
@@ -52,7 +52,7 @@ sns.distplot(irisVirginica['sepalLenghtCm'], kde = False, label = 'Iris Virginic
 
 #Didn't use plt.xlim or plt.ylim as it was unnecessary for these histograms
 
-plt.xlabel ('Centimeters')
+plt.xlabel ('Centimeters') #Labels the X-Axis
 plt.ylabel ('Frequency') #Labels the Y-Axis
 plt.title ('Sepal Length') #Titles the Histogram
 
@@ -132,5 +132,5 @@ plt.show()
 #Pairplot for Sepal and Petal Comparasion
 #Used pairplot to represent multidenminsional relationship between Sepal Lenght, Sepal Width, Petal Length, Petal Width, and their respective speies: https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
 sns.pairplot(data, hue = 'Species', palette = ['purple', 'deeppink', 'blueviolet'])
-plt.savefig('Petal Pairplot') 
+plt.savefig('Iris Pairplot') 
 plt.show()
