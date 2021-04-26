@@ -61,7 +61,7 @@ plt.legend() #Adds a legend to the histogram
 plt.savefig('Sepal Length in CM') #Save file: https://stackoverflow.com/questions/9622163/save-plot-to-image-file-instead-of-displaying-it-using-matplotlib
 plt.show()
 
-#Histogram ofr Sepal Width in CM
+#Histogram for Sepal Width in CM
 sns.distplot(irisSetosa['sepalWidthCm'], kde = False, label = 'Iris Setosa', color = 'purple')
 sns.distplot(irisVersicolor['sepalWidthCm'], kde = False, label = 'Iris Versicolor', color = 'deeppink')
 sns.distplot(irisVirginica['sepalWidthCm'], kde = False, label = 'Iris Virginica', color = 'blueviolet')
@@ -98,4 +98,38 @@ plt.title ('Petal Width')
 
 plt.legend()
 plt.savefig('Petal Width in CM')
+plt.show()
+
+#Scatter plot for Sepal Comparasion
+
+#Used built in fucntion in Seaborn to make scatter plots
+#https://pythonbasics.org/seaborn-scatterplot/
+#https://seaborn.pydata.org/tutorial/relational.html
+sns.scatterplot(x = "sepalLenghtCm", y = "sepalWidthCm", data = data, hue = "Species", palette = ['purple', 'deeppink', 'blueviolet']) # https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
+
+plt.xlabel ('Length in Centimeters') #Labels X-Axis
+plt.ylabel ('Width in Centimeters') #Labels Y-Axis
+
+plt.title ('Sepal') #Titles the scatter plot
+
+plt.legend() #Adds a legend to the scatter plot
+plt.savefig('Sepal Scatter Plot')#Saves the graph as a .png
+plt.show()
+
+#Scatter plot for Petal Comparasion
+sns.scatterplot(x = "petalLengthCm", y = "petalWidthCm", data = data, hue = "Species", palette = ['purple', 'deeppink', 'blueviolet']) # https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
+
+plt.xlabel ('Length in Centimeters') 
+plt.ylabel ('Width in Centimeters') 
+
+plt.title ('Petal') 
+
+plt.legend() 
+plt.savefig('Petal Scatter Plot') 
+plt.show()
+
+#Pairplot for Speal and Petal Comparasion
+#Used pairplot to represent multidenminsional relationship between Sepal Lenght, Sepal Width, Petal Length, Petal Width, and their respective speies: https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
+sns.pairplot(data, hue = 'Species', palette = ['purple', 'deeppink', 'blueviolet'])
+plt.savefig('Petal Paitplot') 
 plt.show()

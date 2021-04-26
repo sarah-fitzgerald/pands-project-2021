@@ -83,15 +83,17 @@
 Needed to import libraries and the dataset to analyse Fisher's Iris Data Set 
 
 ## Libraries
-  	
+  
     import numpy as np
     import matplotlib.pyplot as plt
     import pandas as pd 
     import seaborn as sns 
+  
 
-NumPy
+*_NumPy_ is used for working with arrays and has functions for working with linear algebra, fourier transform, and matricies
+*_Matplotlib_ 
 
-   
+
 
 ## Dataset
 
@@ -179,6 +181,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
  #### 7. https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python
  #### 8. https://stackoverflow.com/questions/22408237/named-colors-in-matplotlib
  #### 9. https://stackoverflow.com/questions/9622163/save-plot-to-image-file-instead-of-displaying-it-using-matplotlib
+ #### 10. https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
 
 
 
