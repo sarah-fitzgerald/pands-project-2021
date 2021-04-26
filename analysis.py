@@ -1,10 +1,9 @@
 #This program outpus a summary of each variable of the Iris Dataset into a single text file, then saves a histogram of each variable, and outputs a scatter plot of each pair of variables
 #Author: Sarah Fitzgerald
 
-import numpy as np #Needed to 
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt #Used to make plots and add information to them
 import pandas as pd #Used to read the .csv file for the data set
-import seaborn as sns 
+import seaborn as sns #Used to make histograms, scatter plots, and pairplots
 
 data = pd.read_csv("irisDataset.csv") # Reads the data from this file
 
@@ -26,7 +25,6 @@ print (data.describe(), file = text) #Gets a summary of numeric vales from the d
 print (" ", file = text)
 
 print ("Information about dataset:", file = text)
-#print (data.info(verbose = True, null_counts = False), file = text) Prints a concise summary of the dataframe, but was unable to get to work right now: https://www.geeksforgeeks.org/python-pandas-dataframe-info/#:~:text=Python%20is%20a%20great%20language,concise%20summary%20of%20the%20dataframe
 print (data.dtypes, file = text) #Prints summary about the DataFrame: https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77
 print (" ", file = text)
 
@@ -43,6 +41,7 @@ irisVirginica = data[data.Species == "Iris-virginica"]
 
 #Used Seaborn built in fucntion to make the histograms
 #The distplot function takes a column from the .csv file to make the histogram 
+#https://cmdlinetips.com/2019/02/how-to-make-histogram-in-python-with-pandas-and-seaborn/
 #First, make the histogram of one variable then add the next histogram to the existing plot object, this is added as an extra layer
 #Colour names for histograms: https://stackoverflow.com/questions/22408237/named-colors-in-matplotlib
 
@@ -105,6 +104,8 @@ plt.show()
 #Used built in fucntion in Seaborn to make scatter plots
 #https://pythonbasics.org/seaborn-scatterplot/
 #https://seaborn.pydata.org/tutorial/relational.html
+#https://seaborn.pydata.org/generated/seaborn.scatterplot.html#:~:text=scatterplot,-seaborn.&text=Draw%20a%20scatter%20plot%20with%20possibility%20of%20several%20semantic%20groupings.&text=It%20is%20possible%20to%20show,interpret%20and%20is%20often%20ineffective.
+#https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
 sns.scatterplot(x = "sepalLenghtCm", y = "sepalWidthCm", data = data, hue = "Species", palette = ['purple', 'deeppink', 'blueviolet']) # https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
 
 plt.xlabel ('Length in Centimeters') #Labels X-Axis
@@ -128,8 +129,8 @@ plt.legend()
 plt.savefig('Petal Scatter Plot') 
 plt.show()
 
-#Pairplot for Speal and Petal Comparasion
+#Pairplot for Sepal and Petal Comparasion
 #Used pairplot to represent multidenminsional relationship between Sepal Lenght, Sepal Width, Petal Length, Petal Width, and their respective speies: https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
 sns.pairplot(data, hue = 'Species', palette = ['purple', 'deeppink', 'blueviolet'])
-plt.savefig('Petal Paitplot') 
+plt.savefig('Petal Pairplot') 
 plt.show()

@@ -25,13 +25,13 @@
 
 
 
-  <h3 align="center">pands-project2021</h3>
+  <h1 align="center">pands-project2021</h1>
 
   <p align="center">
     Sarah Fitzgerald
     
 
-
+#
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -71,7 +71,6 @@
 <!-- Fisher's Iris Data Set -->
 # Fisher's Iris Data Set
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 ## History:
 #### Fisher's Iris Data Set, also known as the Irish Flower Data Set is a data set which consists of 3 classes of 50 instances from three species of Iris. In this data, the length and width of the sepals and petals were measured in ceteminters and a linear discriminant model was used to distinguis the species from each other. 
@@ -83,19 +82,21 @@
 Needed to import libraries and the dataset to analyse Fisher's Iris Data Set 
 
 ## Libraries
-  
-    import numpy as np
+
     import matplotlib.pyplot as plt
     import pandas as pd 
     import seaborn as sns 
   
+  *_Matplotlib_ is used to create visualisations in Python. _Pyplot_ is a collection of functions that make matplotlib work like MATLAB. These was used extensivly in this project to add labels, titles, and legends to plots. It was also used to save and show plots.
+  
+  *_pandas_ is used for data manipulation and analysis in Python. It offers data structures and operations to manipulate numerical tables and time series.
 
-*_NumPy_ is used for working with arrays and has functions for working with linear algebra, fourier transform, and matricies
-*_Matplotlib_ 
+  *_Seaborn_ is a data visualisation library based on matplotlib and it provides an interface for statistical graphics. In this project it was used to plot histograms, scatter plots, and pairplots in this project
 
 
 
 ## Dataset
+
 
 ### Prerequisites
 
@@ -177,13 +178,23 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
  #### 3. https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
  #### 4. https://www.shanelynn.ie/python-pandas-read-csv-load-data-from-csv-files/
  #### 5. https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77
- #### 6. https://cmdlinetips.com/2019/02/how-to-make-histogram-in-python-with-pandas-and-seaborn/
- #### 7. https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python
- #### 8. https://stackoverflow.com/questions/22408237/named-colors-in-matplotlib
- #### 9. https://stackoverflow.com/questions/9622163/save-plot-to-image-file-instead-of-displaying-it-using-matplotlib
- #### 10. https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
+ #### 6. https://www.geeksforgeeks.org/python-pandas-dataframe-info/#:~:text=Python%20is%20a%20great%20language,concise%20summary%20of%20the%20dataframe
+ #### 7. https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77
+ #### 8. https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python
+ #### 9. https://cmdlinetips.com/2019/02/how-to-make-histogram-in-python-with-pandas-and-seaborn/
+ #### 10. https://stackoverflow.com/questions/22408237/named-colors-in-matplotlib
+ #### 11. https://stackoverflow.com/questions/9622163/save-plot-to-image-file-instead-of-displaying-it-using-matplotlib
+ #### 12. https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
+ #### 13. https://pythonbasics.org/seaborn-scatterplot/
+ #### 14. https://seaborn.pydata.org/tutorial/relational.html
+ #### 15. https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
+ #### 16. https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
 
-
+https://en.wikipedia.org/wiki/Pandas_(software)
+https://matplotlib.org/stable/tutorials/introductory/pyplot.html#:~:text=pyplot%20is%20a%20collection%20of,the%20plot%20with%20labels%2C%20etc.
+https://en.wikipedia.org/wiki/Matplotlib
+https://matplotlib.org
+https://seaborn.pydata.org
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
