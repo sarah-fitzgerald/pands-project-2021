@@ -81,12 +81,12 @@
       </ul>
       <ul>
         <li><a href="#pairplot">Pairplot</a></li>
+       </ul>
+    </li>
       </ul>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    </li>
     <li><a href="#references">References</a></li>
+    <ul>
   </ol>
 </details>
 
@@ -172,11 +172,11 @@ Defined the species using the data variable and selecting the column "Species" f
 ```
 Used the built in function Seaborn to make the histograms using the inforamtion from the dataset.
 
-The displot function pulls the information from various named columns in the dataset. The histograms are layered on top of each other. This is done by making a histogram of one variable then adding hte next historgram to an existing plot.  
+The displot function pulls the information from various named columns in the dataset. The histograms are layered on top of each other. This is done by making a histogram of one variable then adding hte next historgram to an existing plot. _kde_ was set to False as it worked better for this plot. 
 ```sh
-    sns.distplot(irisSetosa['sepalLenghtCm'], kde = False, label = 'Iris Setosa', color = 'purple')
+    sns.distplot(irisSetosa['sepalLenghtCm'], kde = False, label = 'Iris Setosa', color = 'orange')
     sns.distplot(irisVersicolor['sepalLenghtCm'], kde = False, label = 'Iris Versicolor', color = 'deeppink')
-    sns.distplot(irisVirginica['sepalLenghtCm'], kde = False, label = 'Iris Virginica', color = 'blueviolet')
+    sns.distplot(irisVirginica['sepalLenghtCm'], kde = False, label = 'Iris Virginica', color = 'dodgerblue')
 ```
 Labled the X-Axis and Y-Axis respectively and added a title to the histogram.
 ```sh
@@ -209,7 +209,7 @@ This process is repeated for each histogram with the variables changed.
 Used Seaborn to create scatter plots. In this case, the X-Axis is the Sepal Length in Centimeters and the Y-Axis is Sepal Width in Centimeters, data is taken from the .csv file, hue is taken from the Species column in the .csv file.
 
 ```sh
-    sns.scatterplot(x = "sepalLenghtCm", y = "sepalWidthCm", data = data, hue = "Species", palette = ['purple', 'deeppink', 'blueviolet']) 
+    sns.scatterplot(x = "sepalLenghtCm", y = "sepalWidthCm", data = data, hue = "Species", palette = ['orange', 'deeppink', 'dodgerblue']) 
 ```
 Next, the X-Axis and Y-Axis were labled and the scatter plot was titled.
 
@@ -231,14 +231,18 @@ This process was repeated for the Petal Comparasion scatter plot.
 
 ![Petal Scatter Plot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Petal%20Scatter%20Plot.png)
 
+![Sepal Length and Petal Length Scatter Plot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/e7383b138bfddccf8f3a3dcaa9353e86874327fa/Sepal%20Length%20and%20Petal%20Length%20Scatter%20Plot.png)
+
+![Sepal Width and Petal Width Scatter Plot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/e7383b138bfddccf8f3a3dcaa9353e86874327fa/Sepal%20Width%20and%20Petal%20Width%20Scatter%20Plot.png)
+
 <!-- Pairplot -->
 # Pairplot 
 ## Pairplot Code
 
-Decided to use a pairplot to the represent multidimensional relationships between Sepal Lenght, Sepal Width, Petal Lenght, Petal Width for each species. After which, the pair plot is saved.
+Decided to use a pairplot to the represent multidimensional relationships between Sepal Lenght, Sepal Width, Petal Lenght, Petal Width for each species as it shows varied information 
 
 ```sh
-    sns.pairplot(data, hue = 'Species', palette = ['purple', 'deeppink', 'blueviolet'])
+    sns.pairplot(data, hue = 'Species', palette = ['orange', 'deeppink', 'dodgerblue'])
     plt.title ('Iris Pairplot') 
     plt.savefig('Iris Pairplot') 
     plt.show()
@@ -248,42 +252,6 @@ Decided to use a pairplot to the represent multidimensional relationships betwee
 ## Pairplot
 
 ![Iris Pairplot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Petal%20Paitplot.png)
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
 
 <!-- REFERENCES -->
 ## References:

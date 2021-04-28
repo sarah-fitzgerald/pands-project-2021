@@ -47,9 +47,9 @@ irisVirginica = data[data.Species == "Iris-virginica"]
 #Colour names for histograms: https://stackoverflow.com/questions/22408237/named-colors-in-matplotlib
 
 #Histogram for Sepal Length in CM
-sns.distplot(irisSetosa['sepalLenghtCm'], kde = False, label = 'Iris Setosa', color = 'purple')
+sns.distplot(irisSetosa['sepalLenghtCm'], kde = False, label = 'Iris Setosa', color = 'orange')
 sns.distplot(irisVersicolor['sepalLenghtCm'], kde = False, label = 'Iris Versicolor', color = 'deeppink')
-sns.distplot(irisVirginica['sepalLenghtCm'], kde = False, label = 'Iris Virginica', color = 'blueviolet')
+sns.distplot(irisVirginica['sepalLenghtCm'], kde = False, label = 'Iris Virginica', color = 'dodgerblue')
 
 #Didn't use plt.xlim or plt.ylim as it was unnecessary for these histograms
 
@@ -62,9 +62,9 @@ plt.savefig('Sepal Length in CM') #Save file: https://stackoverflow.com/question
 plt.show()
 
 #Histogram for Sepal Width in CM
-sns.distplot(irisSetosa['sepalWidthCm'], kde = False, label = 'Iris Setosa', color = 'purple')
+sns.distplot(irisSetosa['sepalWidthCm'], kde = False, label = 'Iris Setosa', color = 'orange')
 sns.distplot(irisVersicolor['sepalWidthCm'], kde = False, label = 'Iris Versicolor', color = 'deeppink')
-sns.distplot(irisVirginica['sepalWidthCm'], kde = False, label = 'Iris Virginica', color = 'blueviolet')
+sns.distplot(irisVirginica['sepalWidthCm'], kde = False, label = 'Iris Virginica', color = 'dodgerblue')
 
 plt.xlabel ('Centimeters')
 plt.ylabel ('Frequency')
@@ -75,9 +75,9 @@ plt.savefig('Sepal Width in CM')
 plt.show()
 
 #Histogram for Petal Length in CM
-sns.distplot(irisSetosa['petalLengthCm'], kde = False, label = 'Iris Setosa', color = 'purple')
+sns.distplot(irisSetosa['petalLengthCm'], kde = False, label = 'Iris Setosa', color = 'orange')
 sns.distplot(irisVersicolor['petalLengthCm'], kde = False, label = 'Iris Versicolor', color = 'deeppink')
-sns.distplot(irisVirginica['petalLengthCm'], kde = False, label = 'Iris Virginica', color = 'blueviolet')
+sns.distplot(irisVirginica['petalLengthCm'], kde = False, label = 'Iris Virginica', color = 'dodgerblue')
 
 plt.xlabel ('Centimeters')
 plt.ylabel ('Frequency')
@@ -88,9 +88,9 @@ plt.savefig('Petal Length in CM')
 plt.show()
 
 #Histogram for Petal Width in CM
-sns.distplot(irisSetosa['petalWidthCm'], kde = False, label = 'Iris Setosa', color = 'purple')
+sns.distplot(irisSetosa['petalWidthCm'], kde = False, label = 'Iris Setosa', color = 'orange')
 sns.distplot(irisVersicolor['petalWidthCm'], kde = False, label = 'Iris Versicolor', color = 'deeppink')
-sns.distplot(irisVirginica['petalWidthCm'], kde = False, label = 'Iris Virginica', color = 'blueviolet')
+sns.distplot(irisVirginica['petalWidthCm'], kde = False, label = 'Iris Virginica', color = 'dodgerblue')
 
 plt.xlabel ('Centimeters')
 plt.ylabel ('Frequency')
@@ -107,7 +107,7 @@ plt.show()
 #https://seaborn.pydata.org/tutorial/relational.html
 #https://seaborn.pydata.org/generated/seaborn.scatterplot.html#:~:text=scatterplot,-seaborn.&text=Draw%20a%20scatter%20plot%20with%20possibility%20of%20several%20semantic%20groupings.&text=It%20is%20possible%20to%20show,interpret%20and%20is%20often%20ineffective.
 #https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
-sns.scatterplot(x = "sepalLenghtCm", y = "sepalWidthCm", data = data, hue = "Species", palette = ['purple', 'deeppink', 'blueviolet']) # https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
+sns.scatterplot(x = "sepalLenghtCm", y = "sepalWidthCm", data = data, hue = "Species", palette = ['orange', 'deeppink', 'dodgerblue']) # https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
 
 plt.xlabel ('Length in Centimeters') #Labels X-Axis
 plt.ylabel ('Width in Centimeters') #Labels Y-Axis
@@ -119,7 +119,7 @@ plt.savefig('Sepal Scatter Plot')#Saves the graph as a .png
 plt.show()
 
 #Scatter plot for Petal Comparasion
-sns.scatterplot(x = "petalLengthCm", y = "petalWidthCm", data = data, hue = "Species", palette = ['purple', 'deeppink', 'blueviolet']) # https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
+sns.scatterplot(x = "petalLengthCm", y = "petalWidthCm", data = data, hue = "Species", palette = ['orange', 'deeppink', 'dodgerblue']) # https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
 
 plt.xlabel ('Length in Centimeters') 
 plt.ylabel ('Width in Centimeters') 
@@ -131,7 +131,7 @@ plt.savefig('Petal Scatter Plot')
 plt.show()
 
 #Scatter plot for Sepal Length and Petal Length Comparasion
-sns.scatterplot(x = "sepalLenghtCm", y = "petalLengthCm", data = data, hue = "Species", palette = ['purple', 'deeppink', 'blueviolet']) # https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
+sns.scatterplot(x = "sepalLenghtCm", y = "petalLengthCm", data = data, hue = "Species", palette = ['orange', 'deeppink', 'dodgerblue']) # https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
 
 plt.xlabel ('Sepal Length in Centimeters') 
 plt.ylabel ('Petal Length in Centimeters') 
@@ -143,7 +143,7 @@ plt.savefig('Sepal Length and Petal Length Scatter Plot')
 plt.show()
 
 #Scatter plot for Sepal Width and Petal Width Comparasion
-sns.scatterplot(x = "sepalWidthCm", y = "petalWidthCm", data = data, hue = "Species", palette = ['purple', 'deeppink', 'blueviolet']) # https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
+sns.scatterplot(x = "sepalWidthCm", y = "petalWidthCm", data = data, hue = "Species", palette = ['orange', 'deeppink', 'dodgerblue']) # https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
 
 plt.xlabel ('Sepal Width in Centimeters') 
 plt.ylabel ('Petal Width in Centimeters') 
@@ -156,6 +156,6 @@ plt.show()
 
 #Pairplot for Sepal and Petal Comparasion
 #Used pairplot to represent multidenminsional relationship between Sepal Lenght, Sepal Width, Petal Length, Petal Width, and their respective speies: https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
-sns.pairplot(data, hue = 'Species', palette = ['purple', 'deeppink', 'blueviolet'])
+sns.pairplot(data, hue = 'Species', palette = ['orange', 'deeppink', 'dodgerblue'])
 plt.savefig('Iris Pairplot') 
 plt.show()
