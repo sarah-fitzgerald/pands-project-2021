@@ -42,6 +42,7 @@ irisVirginica = data[data.Species == "Iris-virginica"]
 #Used Seaborn built in fucntion to make the histograms
 #The distplot function takes a column from the .csv file to make the histogram 
 #https://cmdlinetips.com/2019/02/how-to-make-histogram-in-python-with-pandas-and-seaborn/
+#https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib
 #First, make the histogram of one variable then add the next histogram to the existing plot object, this is added as an extra layer
 #Colour names for histograms: https://stackoverflow.com/questions/22408237/named-colors-in-matplotlib
 
@@ -129,9 +130,32 @@ plt.legend()
 plt.savefig('Petal Scatter Plot') 
 plt.show()
 
+#Scatter plot for Sepal Length and Petal Length Comparasion
+sns.scatterplot(x = "sepalLenghtCm", y = "petalLengthCm", data = data, hue = "Species", palette = ['purple', 'deeppink', 'blueviolet']) # https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
+
+plt.xlabel ('Sepal Length in Centimeters') 
+plt.ylabel ('Petal Length in Centimeters') 
+
+plt.title ('Sepal and Petal Length') 
+
+plt.legend() 
+plt.savefig('Sepal Length and Petal Length Scatter Plot') 
+plt.show()
+
+#Scatter plot for Sepal Width and Petal Width Comparasion
+sns.scatterplot(x = "sepalWidthCm", y = "petalWidthCm", data = data, hue = "Species", palette = ['purple', 'deeppink', 'blueviolet']) # https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
+
+plt.xlabel ('Sepal Width in Centimeters') 
+plt.ylabel ('Petal Width in Centimeters') 
+
+plt.title ('Sepal and Petal Width') 
+
+plt.legend() 
+plt.savefig('Sepal Width and Petal Width Scatter Plot') 
+plt.show()
+
 #Pairplot for Sepal and Petal Comparasion
 #Used pairplot to represent multidenminsional relationship between Sepal Lenght, Sepal Width, Petal Length, Petal Width, and their respective speies: https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
 sns.pairplot(data, hue = 'Species', palette = ['purple', 'deeppink', 'blueviolet'])
-plt.title ('Iris Pairplot') 
 plt.savefig('Iris Pairplot') 
 plt.show()

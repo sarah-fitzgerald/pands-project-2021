@@ -206,7 +206,25 @@ This process is repeated for each histogram with the variables changed.
 # Scatter Plots
 ## Scatter Plot Code
 
+Used Seaborn to create scatter plots. In this case, the X-Axis is the Sepal Length in Centimeters and the Y-Axis is Sepal Width in Centimeters, data is taken from the .csv file, hue is taken from the Species column in the .csv file.
 
+```sh
+    sns.scatterplot(x = "sepalLenghtCm", y = "sepalWidthCm", data = data, hue = "Species", palette = ['purple', 'deeppink', 'blueviolet']) 
+```
+Next, the X-Axis and Y-Axis were labled and the scatter plot was titled.
+
+```sh
+    plt.xlabel ('Length in Centimeters')  
+    plt.ylabel ('Width in Centimeters')   
+    plt.title ('Sepal')
+```
+Finally, a legend was added to the scatter plot, the .png file is saved automaticaly when the code is run.
+```sh
+    plt.legend() 
+    plt.savefig('Sepal Scatter Plot')
+    plt.show()    
+```
+This process was repeated for the Petal Comparasion scatter plot.
 
 ## Scatter Plots
 ![Sepal Scatter Plot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Sepal%20Scatter%20Plot.png)
@@ -216,6 +234,16 @@ This process is repeated for each histogram with the variables changed.
 <!-- Pairplot -->
 # Pairplot 
 ## Pairplot Code
+
+Decided to use a pairplot to the represent multidimensional relationships between Sepal Lenght, Sepal Width, Petal Lenght, Petal Width for each species. After which, the pair plot is saved.
+
+```sh
+    sns.pairplot(data, hue = 'Species', palette = ['purple', 'deeppink', 'blueviolet'])
+    plt.title ('Iris Pairplot') 
+    plt.savefig('Iris Pairplot') 
+    plt.show()
+```
+
 
 ## Pairplot
 
@@ -259,28 +287,30 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- REFERENCES -->
 ## References:
- #### 1. https://en.wikipedia.org/wiki/Iris_flower_data_set
- #### 2. https://archive.ics.uci.edu/ml/datasets/iris
- #### 3. https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
- #### 4. https://www.shanelynn.ie/python-pandas-read-csv-load-data-from-csv-files/
- #### 5. https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77
- #### 6. https://www.geeksforgeeks.org/python-pandas-dataframe-info/#:~:text=Python%20is%20a%20great%20language,concise%20summary%20of%20the%20dataframe
- #### 7. https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77
- #### 8. https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python
- #### 9. https://cmdlinetips.com/2019/02/how-to-make-histogram-in-python-with-pandas-and-seaborn/
- #### 10. https://stackoverflow.com/questions/22408237/named-colors-in-matplotlib
- #### 11. https://stackoverflow.com/questions/9622163/save-plot-to-image-file-instead-of-displaying-it-using-matplotlib
- #### 12. https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
- #### 13. https://pythonbasics.org/seaborn-scatterplot/
- #### 14. https://seaborn.pydata.org/tutorial/relational.html
- #### 15. https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
- #### 16. https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
+ #### . https://en.wikipedia.org/wiki/Iris_flower_data_set
+ #### . https://archive.ics.uci.edu/ml/datasets/iris
+ #### . https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
+ #### . https://matplotlib.org
+ #### . https://en.wikipedia.org/wiki/Matplotlib
+ #### . https://matplotlib.org/stable/tutorials/introductory/pyplot.html#:~:text=pyplot%20is%20a%20collection%20of,the%20plot%20with%20labels%2C%20etc.
+ #### . https://en.wikipedia.org/wiki/Pandas_(software)
+ #### . https://seaborn.pydata.org
+ #### . https://www.shanelynn.ie/python-pandas-read-csv-load-data-from-csv-files/
+ #### . https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77
+ #### . https://www.geeksforgeeks.org/python-pandas-dataframe-info/#:~:text=Python%20is%20a%20great%20language,concise%20summary%20of%20the%20dataframe
+ #### . https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77
+ #### . https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python
+ #### . https://cmdlinetips.com/2019/02/how-to-make-histogram-in-python-with-pandas-and-seaborn/
+ ####  .https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib
+ #### . https://stackoverflow.com/questions/22408237/named-colors-in-matplotlib
+ #### . https://stackoverflow.com/questions/9622163/save-plot-to-image-file-instead-of-displaying-it-using-matplotlib
+ #### . https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
+ #### . https://pythonbasics.org/seaborn-scatterplot/
+ #### . https://seaborn.pydata.org/tutorial/relational.html
+ #### . https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
+ #### . https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
 
-https://en.wikipedia.org/wiki/Pandas_(software)
-https://matplotlib.org/stable/tutorials/introductory/pyplot.html#:~:text=pyplot%20is%20a%20collection%20of,the%20plot%20with%20labels%2C%20etc.
-https://en.wikipedia.org/wiki/Matplotlib
-https://matplotlib.org
-https://seaborn.pydata.org
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
