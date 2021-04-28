@@ -194,13 +194,13 @@ This process is repeated for each histogram with the variables changed.
 
 ## Histograms
 
-![Sepal Length in CM](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Sepal%20Length%20in%20CM.png)
+![Sepal Length in CM](https://github.com/sarah-fitzgerald/pands-project-2021/blob/a50c209bcb8d9baad6068732eceebd480c5e7cc0/Sepal%20Length%20in%20CM.png)
 
-![Sepal Width in CM](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Sepal%20Width%20in%20CM.png)
+![Sepal Width in CM](https://github.com/sarah-fitzgerald/pands-project-2021/blob/a50c209bcb8d9baad6068732eceebd480c5e7cc0/Sepal%20Width%20in%20CM.png)
 
-![Petal Length in CM](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Petal%20Length%20in%20CM.png)
+![Petal Length in CM](https://github.com/sarah-fitzgerald/pands-project-2021/blob/a50c209bcb8d9baad6068732eceebd480c5e7cc0/Petal%20Length%20in%20CM.png)
 
-![Petal Width in CM](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Petal%20Width%20in%20CM.png)
+![Petal Width in CM](https://github.com/sarah-fitzgerald/pands-project-2021/blob/a50c209bcb8d9baad6068732eceebd480c5e7cc0/Petal%20Width%20in%20CM.png)
 
 <!-- Scatter Plots -->
 # Scatter Plots
@@ -251,7 +251,7 @@ Decided to use a pairplot to the represent multidimensional relationships betwee
 
 ## Pairplot
 
-![Iris Pairplot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Petal%20Paitplot.png)
+![Iris Pairplot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/a50c209bcb8d9baad6068732eceebd480c5e7cc0/Iris%20Pairplot.png)
 
 <!-- REFERENCES -->
 ## References:
