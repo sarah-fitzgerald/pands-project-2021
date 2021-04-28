@@ -239,7 +239,7 @@ This process was repeated for the Petal Comparasion scatter plot.
 # Pairplot 
 ## Pairplot Code
 
-Decided to use a pairplot to the represent multidimensional relationships between Sepal Lenght, Sepal Width, Petal Lenght, Petal Width for each species as it shows varied information 
+Decided to use a pairplot to the represent multidimensional relationships between Sepal Lenght, Sepal Width, Petal Lenght, Petal Width for each species as it shows varied information. 
 
 ```sh
     sns.pairplot(data, hue = 'Species', palette = ['orange', 'deeppink', 'dodgerblue'])
@@ -255,42 +255,29 @@ Decided to use a pairplot to the represent multidimensional relationships betwee
 
 <!-- REFERENCES -->
 ## References:
- #### . https://en.wikipedia.org/wiki/Iris_flower_data_set
- #### . https://archive.ics.uci.edu/ml/datasets/iris
- #### . https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
- #### . https://matplotlib.org
- #### . https://en.wikipedia.org/wiki/Matplotlib
- #### . https://matplotlib.org/stable/tutorials/introductory/pyplot.html#:~:text=pyplot%20is%20a%20collection%20of,the%20plot%20with%20labels%2C%20etc.
- #### . https://en.wikipedia.org/wiki/Pandas_(software)
- #### . https://seaborn.pydata.org
- #### . https://www.shanelynn.ie/python-pandas-read-csv-load-data-from-csv-files/
- #### . https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77
- #### . https://www.geeksforgeeks.org/python-pandas-dataframe-info/#:~:text=Python%20is%20a%20great%20language,concise%20summary%20of%20the%20dataframe
- #### . https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77
- #### . https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python
- #### . https://cmdlinetips.com/2019/02/how-to-make-histogram-in-python-with-pandas-and-seaborn/
- ####  .https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib
- #### . https://stackoverflow.com/questions/22408237/named-colors-in-matplotlib
- #### . https://stackoverflow.com/questions/9622163/save-plot-to-image-file-instead-of-displaying-it-using-matplotlib
- #### . https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
- #### . https://pythonbasics.org/seaborn-scatterplot/
- #### . https://seaborn.pydata.org/tutorial/relational.html
- #### . https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
- #### . https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
+ #### 1. https://en.wikipedia.org/wiki/Iris_flower_data_set
+ #### 2. https://archive.ics.uci.edu/ml/datasets/iris
+ #### 3. https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
+ #### 4. https://matplotlib.org
+ #### 5. https://en.wikipedia.org/wiki/Matplotlib
+ #### 6. https://matplotlib.org/stable/tutorials/introductory/pyplot.html#:~:text=pyplot%20is%20a%20collection%20of,the%20plot%20with%20labels%2C%20etc.
+ #### 7. https://en.wikipedia.org/wiki/Pandas_(software)
+ #### 8. https://seaborn.pydata.org
+ #### 9. https://www.shanelynn.ie/python-pandas-read-csv-load-data-from-csv-files/
+ #### 10. https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77
+ #### 11. https://www.geeksforgeeks.org/python-pandas-dataframe-info/#:~:text=Python%20is%20a%20great%20language,concise%20summary%20of%20the%20dataframe
+ #### 12. https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77
+ #### 13. https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python
+ #### 14. https://cmdlinetips.com/2019/02/how-to-make-histogram-in-python-with-pandas-and-seaborn/
+ #### 15. https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib
+ #### 16. https://stackoverflow.com/questions/22408237/named-colors-in-matplotlib
+ #### 17. https://stackoverflow.com/questions/9622163/save-plot-to-image-file-instead-of-displaying-it-using-matplotlib
+ #### 18. https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
+ #### 19. https://pythonbasics.org/seaborn-scatterplot/
+ #### 20. https://seaborn.pydata.org/tutorial/relational.html
+ #### 21. https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
+ #### 22. https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
 
+## Template for Readme
 
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
+https://github.com/othneildrew/Best-README-Template.git
