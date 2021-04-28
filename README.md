@@ -73,6 +73,15 @@
       <ul>
         <li><a href="#scatter-plots">Scatter Plots</a></li>
       </ul>
+      </ul>
+    <li><a href="#pairplot">Pairplot</a></li>
+    <ul>
+      <ul>
+        <li><a href="#pairplot-code">Pairplot Code</a></li>
+      </ul>
+      <ul>
+        <li><a href="#pairplot">Pairplot</a></li>
+      </ul>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -203,6 +212,12 @@ This process is repeated for each histogram with the variables changed.
 ![Sepal Scatter Plot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Sepal%20Scatter%20Plot.png)
 
 ![Petal Scatter Plot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Petal%20Scatter%20Plot.png)
+
+<!-- Pairplot -->
+# Pairplot 
+## Pairplot Code
+
+## Pairplot
 
 ![Iris Pairplot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Petal%20Paitplot.png)
 

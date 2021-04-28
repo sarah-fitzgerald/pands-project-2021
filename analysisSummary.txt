@@ -37,8 +37,8 @@ Species           object
 dtype: object
  
 Types of iris species:
-Iris-versicolor    50
-Iris-setosa        50
 Iris-virginica     50
+Iris-setosa        50
+Iris-versicolor    50
 Name: Species, dtype: int64
  
