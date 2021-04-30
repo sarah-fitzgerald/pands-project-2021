@@ -87,6 +87,12 @@
     </li>
     <li><a href="#references">References</a></li>
     <ul>
+       </ul>
+    </li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <ul>
   </ol>
 </details>
 
@@ -227,13 +233,13 @@ Finally, a legend was added to the scatter plot, the .png file is saved automati
 This process was repeated for the Petal Comparasion scatter plot.
 
 ## Scatter Plots
-![Sepal Scatter Plot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Sepal%20Scatter%20Plot.png)
+![Sepal Scatter Plot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/4eccccdbcb9746dbc6972d89449127133d5d5130/Sepal%20Scatter%20Plot.png)
 
-![Petal Scatter Plot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/17ddd734dca97ba34af52dcee3160b8ad3cce094/Petal%20Scatter%20Plot.png)
+![Petal Scatter Plot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/4eccccdbcb9746dbc6972d89449127133d5d5130/Petal%20Scatter%20Plot.png)
 
-![Sepal Length and Petal Length Scatter Plot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/e7383b138bfddccf8f3a3dcaa9353e86874327fa/Sepal%20Length%20and%20Petal%20Length%20Scatter%20Plot.png)
+![Sepal Length and Petal Length Scatter Plot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/4eccccdbcb9746dbc6972d89449127133d5d5130/Sepal%20Length%20and%20Petal%20Length%20Scatter%20Plot.png)
 
-![Sepal Width and Petal Width Scatter Plot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/e7383b138bfddccf8f3a3dcaa9353e86874327fa/Sepal%20Width%20and%20Petal%20Width%20Scatter%20Plot.png)
+![Sepal Width and Petal Width Scatter Plot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/4eccccdbcb9746dbc6972d89449127133d5d5130/Sepal%20Width%20and%20Petal%20Width%20Scatter%20Plot.png)
 
 <!-- Pairplot -->
 # Pairplot 
@@ -252,6 +258,10 @@ Decided to use a pairplot to the represent multidimensional relationships betwee
 ## Pairplot
 
 ![Iris Pairplot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/a50c209bcb8d9baad6068732eceebd480c5e7cc0/Iris%20Pairplot.png)
+
+<!-- Conclusion -->
+# Conclusion 
+
 
 <!-- REFERENCES -->
 ## References:
