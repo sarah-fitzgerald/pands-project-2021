@@ -87,12 +87,7 @@
     </li>
     <li><a href="#references">References</a></li>
     <ul>
-       </ul>
-    </li>
-      </ul>
-    </li>
-    <li><a href="#conclusion">Conclusion</a></li>
-    <ul>
+  
   </ol>
 </details>
 
@@ -103,9 +98,9 @@
 
 
 ## History
-Fisher's Iris Data Set, also known as the Irish Flower Data Set is a data set which consists of 3 classes of 50 instances from three species of Iris. In this data, the length and width of the sepals and petals were measured in ceteminters and a linear discriminant model was used to distinguis the species from each other. 
+Fisher's Iris Data Set, also known as the Irish Flower Data Set is a data set which consists of 3 classes of 50 instances from three species of Iris. In this data, the length and width of the sepals and petals were measured in ceteminters and a linear discriminant model was used to distinguis the species from each other. It is often called the best known database to be found in pattern recognition literature.
 
-
+![iris.png](https://github.com/sarah-fitzgerald/pands-project-2021/blob/f5936f5666f47f8cf397cad9f5860033dcd25cf0/iris.png)
 
 <!-- Libraries and Dataset Import-->
 # Libraries and Dataset Import
@@ -142,7 +137,7 @@ After the data has been loaded from the .csv file we needed to analyse the data 
     data.head()
 ```
 
-This next section add text to title and subtitle the information in the .txt file
+The file = text adds the sentences, information, and spaces to the .txt file.
 
 ```sh
     print ("Analysis Summary", file = text)
@@ -259,9 +254,6 @@ Decided to use a pairplot to the represent multidimensional relationships betwee
 
 ![Iris Pairplot](https://github.com/sarah-fitzgerald/pands-project-2021/blob/a50c209bcb8d9baad6068732eceebd480c5e7cc0/Iris%20Pairplot.png)
 
-<!-- Conclusion -->
-# Conclusion 
-
 
 <!-- REFERENCES -->
 ## References:
@@ -287,6 +279,8 @@ Decided to use a pairplot to the represent multidimensional relationships betwee
  #### 20. https://seaborn.pydata.org/tutorial/relational.html
  #### 21. https://www.geeksforgeeks.org/scatterplot-using-seaborn-in-python/
  #### 22. https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html
+ #### 23. https://www.tutorialspoint.com/seaborn/seaborn_kernel_density_estimates.htm
+ #### 24. https://dodona.ugent.be/en/activities/779139786/
 
 ## Template for Readme
 

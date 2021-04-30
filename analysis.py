@@ -45,6 +45,7 @@ irisVirginica = data[data.Species == "Iris-virginica"]
 #https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib
 #First, make the histogram of one variable then add the next histogram to the existing plot object, this is added as an extra layer
 #Colour names for histograms: https://stackoverflow.com/questions/22408237/named-colors-in-matplotlib
+#kde https://www.tutorialspoint.com/seaborn/seaborn_kernel_density_estimates.htm
 
 #Histogram for Sepal Length in CM
 sns.distplot(irisSetosa['sepalLenghtCm'], kde = False, label = 'Iris Setosa', color = 'orange')
